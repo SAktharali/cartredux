@@ -1,5 +1,5 @@
 import React from 'react'
-import {HashRouter,Routes,Route} from 'react-router-dom'
+import {Routes,Route} from 'react-router-dom'
 import Home from './Home'
 import CartDetails from './CartDetails'
 import {Provider} from 'react-redux'
@@ -9,7 +9,7 @@ import {Toaster} from 'react-hot-toast';
 import CheckoutPage from './CheckOutPage'
 const App = () => {
   return (
-    <HashRouter>
+   
     <Provider store={store}>
       {/* <NavBar/> */}
       <Toaster
@@ -22,7 +22,7 @@ const App = () => {
       <Route path='/cart/:foodId' element={<CheckoutPage/>}/>
     </Routes>
     </Provider>
-    </HashRouter>
+  
   )
 }
 
